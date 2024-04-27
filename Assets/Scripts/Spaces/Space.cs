@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Space : MonoBehaviour
+public class Space : Traversable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private TraversableType originalTraversableType;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Start() {
+        originalTraversableType = traversableType;
     }
 }
