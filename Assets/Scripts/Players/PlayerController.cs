@@ -18,9 +18,13 @@ public class PlayerController : Player
         base.OnNetworkSpawn();
         if (!IsOwner)
             return;
+
         moveAction.performed += ctx => {
             moveDirection = ctx.ReadValue<Vector2>();
         };
+
+        if (LobbyManager.Instance != null)
+            LobbyManager.Instance.CreateLobby();
 
     }
 
