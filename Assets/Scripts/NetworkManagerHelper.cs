@@ -9,9 +9,9 @@ using UnityEngine.UI;
 
 public class NetworkManagerHelper : MonoBehaviour
 {
-
-    void Start()
-    {
+    public static NetworkManagerHelper Instance { get; private set; }
+    private void Awake() {
+        Instance = this;
     }
 
 

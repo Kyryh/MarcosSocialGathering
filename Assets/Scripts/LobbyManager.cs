@@ -22,6 +22,7 @@ public class LobbyManager : NetworkBehaviour
     private NetworkVariable<int> currentBoardIndex = new();
     private BoardDef CurrentBoard => boards[currentBoardIndex.Value];
 
+    public Selectable[] serverOnlySelectables;
 
     public GameObject boardsSelection;
 
@@ -29,16 +30,44 @@ public class LobbyManager : NetworkBehaviour
     void Start()
     {
         Instance = this;
+
+        var boardsDropdown = boardsSelection.GetComponentInChildren<TMP_Dropdown>();
+        foreach (BoardDef board in boards) {
+            boardsDropdown.options.Add(new TMP_Dropdown.OptionData(board.boardName));
+        }
+        boardsDropdown.RefreshShownValue();
+
         NetworkManager.Singleton.ConnectionApprovalCallback = (approvalRequest, approvalResponse) => {
             approvalResponse.Approved = NetworkManager.ConnectedClientsIds.Count < 4;
             approvalResponse.CreatePlayerObject = true;
-            approvalResponse.Position = new Vector3 (0, 10, 0);
+            approvalResponse.Position = new Vector3(0, 10, 0);
             approvalResponse.Rotation = Quaternion.Euler(0, 180, 0);
-            
         };
-        NetworkManager.Singleton.OnConnectionEvent += (networkManager, eventData) => {
-            if (!networkManager.IsServer)
-                return;
+    }
+
+    public override void OnNetworkSpawn() {
+
+        NetworkManager.Singleton.OnConnectionEvent += OnConnectionEvent;
+
+
+        currentBoardIndex.OnValueChanged += (_, _) => OnCurrentBoardIndexChanged();
+        OnCurrentBoardIndexChanged();
+
+    }
+
+    public override void OnNetworkDespawn() {
+        NetworkManager.Singleton.OnConnectionEvent -= OnConnectionEvent;
+
+    }
+
+    private void OnCurrentBoardIndexChanged() {
+        boardsSelection.GetComponentInChildren<TMP_Dropdown>().value = currentBoardIndex.Value;
+        boardsSelection.transform.Find("Board Preview/Image").GetComponent<Image>().sprite = CurrentBoard.boardPreview;
+        boardsSelection.transform.Find("Board Preview/Description").GetComponent<TMP_Text>().text = CurrentBoard.boardDescription;
+    }
+
+    private void OnConnectionEvent(NetworkManager networkManager, ConnectionEventData eventData) {
+        if (networkManager.IsServer) {
             switch (eventData.EventType) {
                 case ConnectionEvent.ClientConnected:
                     OnClientConnected(eventData.ClientId);
@@ -47,21 +76,17 @@ public class LobbyManager : NetworkBehaviour
                     OnClientDisconnected(eventData.ClientId);
                     break;
             }
-        };
-
-        var boardsDropdown = boardsSelection.GetComponentInChildren<TMP_Dropdown>();
-        foreach (BoardDef board in boards) {
-            boardsDropdown.options.Add(new TMP_Dropdown.OptionData(board.boardName));
+        } else {
+            switch (eventData.EventType) {
+                case ConnectionEvent.ClientConnected:
+                    currentBoardIndex.OnValueChanged.Invoke(0, currentBoardIndex.Value);
+                    break;
+                case ConnectionEvent.ClientDisconnected:
+                    NetworkManagerHelper.Instance.Shutdown();
+                    break;
+            }
         }
-        boardsDropdown.RefreshShownValue();
-        OnBoardSelected(0);
-        currentBoardIndex.OnValueChanged += (_, _) => {
-            boardsSelection.transform.Find("Board Preview/Image").GetComponent<Image>().sprite = CurrentBoard.boardPreview;
-            boardsSelection.transform.Find("Board Preview/Description").GetComponent<TMP_Text>().text = CurrentBoard.boardDescription;
-        };
-        currentBoardIndex.OnValueChanged.Invoke(0, 0);
     }
-
     private void OnClientConnected(ulong clientId) {
         SetInitialPositionRPC(
             GetFreePlatform(clientId) ?? Vector3.zero,
@@ -70,6 +95,8 @@ public class LobbyManager : NetworkBehaviour
         for (int i = 0; i < platforms.Length; i++) {
             PlatformSetActiveRPC(i, platforms[i].activeSelf);
         }
+        currentBoardIndex.OnValueChanged.Invoke(0, 0);
+
     }
 
     private void OnClientDisconnected(ulong clientId) {
@@ -104,10 +131,18 @@ public class LobbyManager : NetworkBehaviour
     }
 
     public void CreateLobby() {
+        foreach (var selectable in serverOnlySelectables)
+        {
+            selectable.interactable = NetworkManager.IsServer;
+        }
         OnCreateLobby?.Invoke();
     }
 
     public void OnBoardSelected(int index) {
         currentBoardIndex.Value = index;
+    }
+
+    private void Update() {
+
     }
 }
