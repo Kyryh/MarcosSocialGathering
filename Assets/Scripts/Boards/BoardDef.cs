@@ -13,5 +13,5 @@ public class BoardDef : ScriptableObject
     [TextArea]
     public string boardDescription;
 
-    public Texture2D boardPreview;
+    public Sprite boardPreview;
 }

@@ -15,4 +15,4 @@ MonoBehaviour:
   boardSceneName: SampleScene
   boardName: Example Board
   boardDescription: Example board that serves as an example for other boards
-  boardPreview: {fileID: 0}
+  boardPreview: {fileID: 21300000, guid: c0770663bf04a7542abe3c19dcfbdbe2, type: 3}
