@@ -79,7 +79,7 @@ public class LobbyManager : NetworkBehaviour
         } else {
             switch (eventData.EventType) {
                 case ConnectionEvent.ClientConnected:
-                    currentBoardIndex.OnValueChanged.Invoke(0, currentBoardIndex.Value);
+                    OnCurrentBoardIndexChanged();
                     break;
                 case ConnectionEvent.ClientDisconnected:
                     NetworkManagerHelper.Instance.Shutdown();
@@ -140,9 +140,5 @@ public class LobbyManager : NetworkBehaviour
 
     public void OnBoardSelected(int index) {
         currentBoardIndex.Value = index;
-    }
-
-    private void Update() {
-
     }
 }
