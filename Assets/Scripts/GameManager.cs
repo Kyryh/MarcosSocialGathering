@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -28,8 +29,8 @@ public class GameManager : NetworkBehaviour
         
     }
 
-    public void StartGame() {
-
+    public void StartGame(string boardSceneName) {
+        //boardState.Value.BoardSceneName = boardSceneName;
     }
 
     // Update is called once per frame
