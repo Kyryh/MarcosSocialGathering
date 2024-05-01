@@ -63,7 +63,7 @@ public class PlayerManager : NetworkBehaviour
 
     [Rpc(SendTo.SpecifiedInParams)]
     void SetPlayerNameRPC(RpcParams rpcParams) {
-        SetPlayerNameServerRPC(name); // TODO
+        SetPlayerNameServerRPC(OptionsManager.GetPlayerName());
     }
 
     [Rpc(SendTo.Server)]

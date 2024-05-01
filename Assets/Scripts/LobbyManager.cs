@@ -53,8 +53,8 @@ public class LobbyManager : NetworkBehaviour
         GameManager.Instance.OnPlayerManagersModified += OnPlayerManagersModified;
 
 
-        currentBoardIndex.OnValueChanged += (_, _) => OnCurrentBoardIndexChanged();
-        OnCurrentBoardIndexChanged();
+        currentBoardIndex.OnValueChanged += OnCurrentBoardIndexChanged;
+        OnCurrentBoardIndexChanged(0, 0);
 
     }
 
@@ -62,6 +62,8 @@ public class LobbyManager : NetworkBehaviour
     public override void OnNetworkDespawn() {
         NetworkManager.Singleton.OnConnectionEvent -= OnConnectionEvent;
         GameManager.Instance.OnPlayerManagersModified -= OnPlayerManagersModified;
+
+        currentBoardIndex.OnValueChanged -= OnCurrentBoardIndexChanged;
 
     }
 
@@ -92,7 +94,7 @@ public class LobbyManager : NetworkBehaviour
         }
     }
 
-    private void OnCurrentBoardIndexChanged() {
+    private void OnCurrentBoardIndexChanged(int _, int __) {
         boardsSelection.GetComponentInChildren<TMP_Dropdown>().value = currentBoardIndex.Value;
         boardsSelection.transform.Find("Board Preview/Image").GetComponent<Image>().sprite = CurrentBoard.boardPreview;
         boardsSelection.transform.Find("Board Preview/Description").GetComponent<TMP_Text>().text = CurrentBoard.boardDescription;
@@ -113,7 +115,7 @@ public class LobbyManager : NetworkBehaviour
             switch (eventData.EventType) {
                 case ConnectionEvent.ClientConnected:
                     CreateLobby();
-                    OnCurrentBoardIndexChanged();
+                    OnCurrentBoardIndexChanged(0, 0);
                     break;
                 case ConnectionEvent.ClientDisconnected:
                     NetworkManagerHelper.Instance.Shutdown();
