@@ -16,14 +16,14 @@ public class GameManager : NetworkBehaviour
 
 
     public PlayerManager Player(ulong clientId) {
-        return players.Where(manager => manager.IsActive && manager.ClientId == clientId).FirstOrDefault();
+        return players.FirstOrDefault(player => player.IsActive && player.ClientId == clientId);
     }
 
     public PlayerManager LocalPlayer => Player(NetworkManager.LocalClientId);
 
 
     public void AddPlayer(ulong clientId) {
-        var player = players.Where(manager => !manager.IsActive).First();
+        var player = players.First(player => !player.IsActive);
         player.ClientId = clientId;
         byte colorIndex;
         for (colorIndex = 0; colorIndex < 3; colorIndex++) {
@@ -35,7 +35,7 @@ public class GameManager : NetworkBehaviour
     }
 
     public void RemovePlayer(ulong clientId) {
-        players.Where(manager => manager.IsActive && manager.ClientId == clientId).First().Deactivate();
+        players.First(player => player.IsActive && player.ClientId == clientId).Deactivate();
     }
 
     private void Awake() {
