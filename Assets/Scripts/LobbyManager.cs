@@ -152,4 +152,8 @@ public class LobbyManager : NetworkBehaviour
     public void OnBoardSelected(int index) {
         currentBoardIndex.Value = index;
     }
+
+    public void StartGame() {
+        GameManager.Instance.StartGame(CurrentBoard.boardSceneName);
+    }
 }

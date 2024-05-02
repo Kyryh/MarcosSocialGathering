@@ -6,6 +6,7 @@ using Unity.Collections;
 using Unity.Netcode;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : NetworkBehaviour
 {
@@ -13,6 +14,8 @@ public class GameManager : NetworkBehaviour
 
     public PlayerManager[] players = new PlayerManager[4];
     public event Action OnPlayerManagersModified;
+
+    NetworkVariable<FixedString32Bytes> boardSceneName = new();
 
 
     public PlayerManager Player(ulong clientId) {
@@ -51,19 +54,10 @@ public class GameManager : NetworkBehaviour
         DontDestroyOnLoad(gameObject);
         Instance = this;
     }
-    void Start()
-    {
-        
-    }
 
-    public void StartGame(string boardSceneName) {
-        //boardState.Value.BoardSceneName = boardSceneName;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void StartGame(string sceneName) {
+        boardSceneName.Value = sceneName;
+        NetworkManager.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
     }
 
 
