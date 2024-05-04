@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "com.community.netcode.extensions": {
+      "version": "https://github.com/Johnny-Connor/multiplayer-community-contributions.git?path=/com.community.netcode.extensions#NetworkDictionary-CS1620-errors",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.netcode.gameobjects": "1.0.2"
+      },
+      "hash": "a1074836f12848870075a1d2fe16a8fc1d9bac51"
+    },
     "com.unity.burst": {
       "version": "1.8.13",
       "depth": 2,

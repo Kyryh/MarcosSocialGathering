@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.community.netcode.extensions": "https://github.com/Johnny-Connor/multiplayer-community-contributions.git?path=/com.community.netcode.extensions#NetworkDictionary-CS1620-errors",
     "com.unity.collab-proxy": "2.3.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.inputsystem": "1.8.1",
