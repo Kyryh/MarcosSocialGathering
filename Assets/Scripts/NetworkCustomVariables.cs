@@ -41,7 +41,7 @@ public class NetworkBools : NetworkVariable<byte> {
 /// <summary>
 /// Represents a network variable that stores a series of signed byte values
 /// </summary>
-internal class NetworkNums : NetworkVariable<long> {
+public class NetworkNums : NetworkVariable<long> {
 
     /// <summary>
     /// Gets the length of the sequence of signed bytes
