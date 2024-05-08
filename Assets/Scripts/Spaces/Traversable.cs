@@ -1,27 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
-public class Traversable : MonoBehaviour
-{
-    [SerializeField]
-    private TraversableType traversableType;
-
-    private TraversableType traversableOverride;
-
-    public TraversableType TraversableOverride {
-        get {
-            return traversableOverride;
-        }
-        set {
-            SetSpace(value != null ? value : traversableType);
-            traversableOverride = value;   
-        }
-    }
-
+public abstract class Traversable : MonoBehaviour {
 
     public List<Traversable> nextTraversable = new();
 
@@ -29,7 +11,9 @@ public class Traversable : MonoBehaviour
     [HideInInspector]
     public List<Traversable> previousTraversable = new();
 
-    public virtual bool ShouldCountForDiceRolls => traversableType.ShouldCountForDiceRolls;
+    public virtual void OnPassing() {
+
+    }
 
     public virtual void Awake() {
         foreach (Traversable traversable in nextTraversable) {
@@ -37,17 +21,12 @@ public class Traversable : MonoBehaviour
         }
     }
 
-    private void SetSpace(TraversableType traversableType) {
-        // set the icon here or something idk i'll figure it out
-    }
-
-
     private void OnDrawGizmos() {
         Gizmos.color = Color.magenta;
         foreach (var traversable in nextTraversable) {
             if (traversable != null) {
 
-                Vector3 direction = (transform.position - traversable.transform.position)/ 5;
+                Vector3 direction = (transform.position - traversable.transform.position) / 5;
                 Vector3 arrowEnd1 = traversable.transform.position + Quaternion.Euler(0, 30, 0) * direction;
                 Vector3 arrowEnd2 = traversable.transform.position + Quaternion.Euler(0, -30, 0) * direction;
 
