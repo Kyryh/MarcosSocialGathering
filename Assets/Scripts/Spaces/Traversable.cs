@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public abstract class Traversable : MonoBehaviour {
 
     public List<Traversable> nextTraversable = new();
