@@ -16,6 +16,15 @@ public class GameManager : NetworkBehaviour
     public event Action OnPlayerManagersModified;
 
     NetworkVariable<FixedString32Bytes> boardSceneName = new();
+    NetworkVariable<byte> numTurns = new();
+    NetworkVariable<byte> currentTurn = new();
+
+    // TODO
+    //NetworkDictionary<byte, byte> spaceOverrides;
+
+    public readonly NetworkBools boardBools = new();
+    public readonly NetworkNums boardNums = new();
+
 
 
     public PlayerManager Player(ulong clientId) {
@@ -46,13 +55,13 @@ public class GameManager : NetworkBehaviour
             Destroy(gameObject);
             return;
         }
+        DontDestroyOnLoad(gameObject);
+        Instance = this;
+
         foreach (var player in players)
         {
             player.OnPlayerModified += () => OnPlayerManagersModified?.Invoke();
         }
-
-        DontDestroyOnLoad(gameObject);
-        Instance = this;
     }
 
     public void StartGame(string sceneName) {
