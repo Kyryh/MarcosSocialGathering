@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,7 +7,21 @@ using UnityEngine;
 
 public class Traversable : MonoBehaviour
 {
-    public TraversableType traversableType;
+    [SerializeField]
+    private TraversableType traversableType;
+
+    private TraversableType traversableOverride;
+
+    public TraversableType TraversableOverride {
+        get {
+            return traversableOverride;
+        }
+        set {
+            SetSpace(value != null ? value : traversableType);
+            traversableOverride = value;   
+        }
+    }
+
 
     public List<Traversable> nextTraversable = new();
 
@@ -20,6 +35,10 @@ public class Traversable : MonoBehaviour
         foreach (Traversable traversable in nextTraversable) {
             traversable.previousTraversable.Add(this);
         }
+    }
+
+    private void SetSpace(TraversableType traversableType) {
+        // set the icon here or something idk i'll figure it out
     }
 
 
