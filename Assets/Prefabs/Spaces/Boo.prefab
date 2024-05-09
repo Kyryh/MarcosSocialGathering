@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1115277631481699187
+--- !u!1001 &369922073579855315
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7191685799591962941, guid: ca90823801d1b9a458aca8383f50d2d5, type: 3}
       propertyPath: m_Name
-      value: TraversableNode
+      value: Boo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58,23 +58,23 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7191685799591962941, guid: ca90823801d1b9a458aca8383f50d2d5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7696019697970919693}
+      addedObject: {fileID: 511414682716486706}
   m_SourcePrefab: {fileID: 100100000, guid: ca90823801d1b9a458aca8383f50d2d5, type: 3}
---- !u!1 &7832959565716107854 stripped
+--- !u!1 &7416366508825900270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7191685799591962941, guid: ca90823801d1b9a458aca8383f50d2d5, type: 3}
-  m_PrefabInstance: {fileID: 1115277631481699187}
+  m_PrefabInstance: {fileID: 369922073579855315}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7696019697970919693
+--- !u!114 &511414682716486706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7832959565716107854}
+  m_GameObject: {fileID: 7416366508825900270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b32ec5962fce941b49532bb0515790, type: 3}
+  m_Script: {fileID: 11500000, guid: dd165fae77016df40abfbf4a8d1dd993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nextTraversable: []
