@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6327600533321415138}
   - component: {fileID: 7706280504719896986}
+  - component: {fileID: 5267708586005134166}
   m_Layer: 0
   m_Name: TraversableNode
   m_TagString: Untagged
@@ -44,5 +45,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b32ec5962fce941b49532bb0515790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextTraversable: []
+  nextTraversable:
+  - {fileID: 7706280504719896986}
   previousTraversable: []
+--- !u!114 &5267708586005134166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2474930471802865852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2518a3a5e64c05c46a5f000d57e7d743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
