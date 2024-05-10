@@ -6,25 +6,25 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public abstract class Traversable : MonoBehaviour {
 
-    public List<Traversable> nextTraversable = new();
+    public List<Traversable> nextTraversables = new();
 
     [DoNotSerialize]
     [HideInInspector]
-    public List<Traversable> previousTraversable = new();
+    public List<Traversable> previousTraversables = new();
 
     public virtual void OnPassing() {
 
     }
 
     public virtual void Awake() {
-        foreach (Traversable traversable in nextTraversable) {
-            traversable.previousTraversable.Add(this);
+        foreach (Traversable traversable in nextTraversables) {
+            traversable.previousTraversables.Add(this);
         }
     }
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.magenta;
-        foreach (var traversable in nextTraversable) {
+        foreach (var traversable in nextTraversables) {
             if (traversable != null) {
 
                 Vector3 direction = (transform.position - traversable.transform.position) / 5;
