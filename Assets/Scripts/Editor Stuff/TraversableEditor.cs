@@ -50,6 +50,8 @@ public class TraversableEditor {
     }
 
     private static void AddNextTraversable(Traversable traversable, Traversable nextTraversable) {
+        if (traversable.nextTraversables.Contains(nextTraversable))
+            return;
         var serializedObject = new SerializedObject(traversable);
         serializedObject.Update();
         var nextTraversables = serializedObject.FindProperty("nextTraversables");
