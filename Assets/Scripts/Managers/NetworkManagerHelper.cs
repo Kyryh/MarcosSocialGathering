@@ -48,10 +48,10 @@ public class NetworkManagerHelper : MonoBehaviour
 
     public void Shutdown() {
         NetworkManager.Singleton.Shutdown();
+        SceneManager.LoadScene("MainMenu");
         foreach (var player in GameManager.Instance.players)
         {
             player.Deactivate();
         }
-        SceneManager.LoadScene("MainMenu");
     }
 }
