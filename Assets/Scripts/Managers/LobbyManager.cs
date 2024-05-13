@@ -118,7 +118,7 @@ public class LobbyManager : NetworkBehaviour
                     OnCurrentBoardIndexChanged(0, 0);
                     break;
                 case ConnectionEvent.ClientDisconnected:
-                    NetworkManagerHelper.Instance.Shutdown();
+                    NetworkManagerHelper.Shutdown();
                     break;
             }
         }

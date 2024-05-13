@@ -11,6 +11,10 @@ public class NetworkManagerHelper : MonoBehaviour
 {
     public static NetworkManagerHelper Instance { get; private set; }
     private void Awake() {
+        if (Instance != null) {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
     }
 
@@ -21,14 +25,14 @@ public class NetworkManagerHelper : MonoBehaviour
         
     }
 
-    public void StartHost() {
+    public static void StartHost() {
         UnityTransport unityTransport = NetworkManager.Singleton.GetComponent<UnityTransport>();
 
         unityTransport.SetConnectionData("127.0.0.1", (ushort)2626, "0.0.0.0");
         NetworkManager.Singleton.StartHost();
     }
 
-    public void StartClient(Transform canvas) {
+    public static void StartClient(Transform canvas) {
         UnityTransport unityTransport = NetworkManager.Singleton.GetComponent<UnityTransport>();
 
         Transform mainMenu = canvas.Find("Main Menu");
@@ -46,7 +50,7 @@ public class NetworkManagerHelper : MonoBehaviour
         }
     }
 
-    public void Shutdown() {
+    public static void Shutdown() {
         NetworkManager.Singleton.Shutdown();
         SceneManager.LoadScene("MainMenu");
         foreach (var player in GameManager.Instance.players)
