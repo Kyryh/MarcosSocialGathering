@@ -50,10 +50,12 @@ public class GameManager : NetworkBehaviour
         players.First(player => player.IsActive && player.ClientId == clientId).Deactivate();
     }
 
-    private void Awake() {
+    private IEnumerator Start() {
+
+        yield return null;
         if (Instance != null) {
             Destroy(gameObject);
-            return;
+            yield break;
         }
         DontDestroyOnLoad(gameObject);
         Instance = this;
