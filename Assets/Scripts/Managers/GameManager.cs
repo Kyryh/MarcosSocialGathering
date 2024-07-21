@@ -19,6 +19,32 @@ public class GameManager : NetworkBehaviour
     NetworkVariable<byte> numTurns = new();
     NetworkVariable<byte> currentTurn = new();
 
+
+    NetworkVariable<ulong> currentPlayer = new();
+    NetworkVariable<bool> currentPlayerActive = new();
+
+    /// <summary>
+    /// Returns which client has authority currently (whose turn it is).
+    /// Used for checking who's allowed to make choices right now (e.g. during UI prompts).
+    /// If null, everyone is allowed
+    /// </summary>
+    public ulong? CurrentPlayer {
+        get {
+            if (currentPlayerActive.Value)
+                return currentPlayer.Value;
+            return null;
+        }
+        set {
+            if (value == null) {
+                currentPlayerActive.Value = false;
+            }
+            else {
+                currentPlayerActive.Value = true;
+                currentPlayer.Value = (ulong)value;
+            }
+        }
+    }
+
     // TODO
     //NetworkDictionary<byte, byte> spaceOverrides;
 

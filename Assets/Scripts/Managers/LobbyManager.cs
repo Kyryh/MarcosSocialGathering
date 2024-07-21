@@ -19,8 +19,6 @@ public class LobbyManager : NetworkBehaviour
     private NetworkVariable<int> currentBoardIndex = new();
     private BoardDef CurrentBoard => boards[currentBoardIndex.Value];
 
-    public Selectable[] serverOnlySelectables;
-
     public GameObject boardsSelection;
     public Transform playersTab;
     public Transform colorSelector;
@@ -142,10 +140,6 @@ public class LobbyManager : NetworkBehaviour
     }
 
     public void CreateLobby() {
-        foreach (var selectable in serverOnlySelectables)
-        {
-            selectable.interactable = NetworkManager.IsServer;
-        }
         OnCreateLobby?.Invoke();
     }
 
