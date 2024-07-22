@@ -53,9 +53,11 @@ public class NetworkManagerHelper : MonoBehaviour
     public static void Shutdown() {
         NetworkManager.Singleton.Shutdown();
         SceneManager.LoadScene("MainMenu");
-        foreach (var player in GameManager.Instance.players)
-        {
-            player.Deactivate();
+        if (NetworkManager.Singleton.IsServer) {
+            foreach (var player in GameManager.Instance.players)
+            {
+                player.Deactivate();
+            }
         }
     }
 }
