@@ -17,6 +17,8 @@ public class NetworkSelectable : Selectable {
     }
 
     public static bool CheckInteractable(bool serverOnly) {
+        if (!NetworkManager.Singleton)
+            return false;
         if (serverOnly)
             return NetworkManager.Singleton.IsServer;
 
