@@ -73,7 +73,9 @@ public class GameManager : NetworkBehaviour
     }
 
     public void RemovePlayer(ulong clientId) {
-        players.First(player => player.IsActive && player.ClientId == clientId).Deactivate();
+        var player = players.FirstOrDefault(player => player.IsActive && player.ClientId == clientId);
+        if (player)
+            player.Deactivate();
     }
 
     private IEnumerator Start() {
