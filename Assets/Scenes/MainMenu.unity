@@ -642,7 +642,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 111329773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fe73c749adaf97429fa2752535fa8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -699,6 +699,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
+  serverOnly: 1
 --- !u!114 &111329776
 MonoBehaviour:
   m_ObjectHideFlags: 0
