@@ -71,7 +71,7 @@ internal class NetworkDropdownEditor : DropdownEditor {
 
 [CustomEditor(typeof(NetworkInputField), true)]
 [CanEditMultipleObjects]
-internal class NetworkInputFieldEditor : ButtonEditor {
+internal class NetworkInputFieldEditor : InputFieldEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {
@@ -91,7 +91,7 @@ internal class NetworkInputFieldEditor : ButtonEditor {
 
 [CustomEditor(typeof(NetworkScrollbar), true)]
 [CanEditMultipleObjects]
-internal class NetworkScrollbarEditor : ButtonEditor {
+internal class NetworkScrollbarEditor : ScrollbarEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {
@@ -111,7 +111,7 @@ internal class NetworkScrollbarEditor : ButtonEditor {
 
 [CustomEditor(typeof(NetworkSlider), true)]
 [CanEditMultipleObjects]
-internal class NetworkSliderEditor : ButtonEditor {
+internal class NetworkSliderEditor : SliderEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {
@@ -131,7 +131,7 @@ internal class NetworkSliderEditor : ButtonEditor {
 
 [CustomEditor(typeof(NetworkToggle), true)]
 [CanEditMultipleObjects]
-internal class NetworkToggleEditor : ButtonEditor {
+internal class NetworkToggleEditor : ToggleEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {

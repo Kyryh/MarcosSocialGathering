@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NetworkInputField : Toggle {
+public class NetworkInputField : InputField {
     [Tooltip(
         "Should the selectable be interactable only by the server's owner?\n" +
         "If false, it will be interactable only to the GameManager::CurrentPlayer"
