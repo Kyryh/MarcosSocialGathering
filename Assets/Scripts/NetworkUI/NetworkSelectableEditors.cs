@@ -51,7 +51,7 @@ internal class NetworkButtonEditor : ButtonEditor {
 
 [CustomEditor(typeof(NetworkDropdown), true)]
 [CanEditMultipleObjects]
-internal class NetworkDropdownEditor : DropdownEditor {
+internal class NetworkDropdownEditor : TMPro.EditorUtilities.DropdownEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {
@@ -71,7 +71,7 @@ internal class NetworkDropdownEditor : DropdownEditor {
 
 [CustomEditor(typeof(NetworkInputField), true)]
 [CanEditMultipleObjects]
-internal class NetworkInputFieldEditor : InputFieldEditor {
+internal class NetworkInputFieldEditor : TMPro.EditorUtilities.TMP_InputFieldEditor {
 
     SerializedProperty serverOnlyProperty;
     protected override void OnEnable() {

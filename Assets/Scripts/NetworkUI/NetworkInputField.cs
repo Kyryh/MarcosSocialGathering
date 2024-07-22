@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NetworkInputField : InputField {
+public class NetworkInputField : TMP_InputField {
     [Tooltip(
         "Should the selectable be interactable only by the server's owner?\n" +
         "If false, it will be interactable only to the GameManager::CurrentPlayer"
