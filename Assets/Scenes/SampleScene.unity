@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -38,13 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +65,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -97,7 +92,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -176,7 +171,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1360061058}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -217,7 +212,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1765149962}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -346,7 +341,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1251117172}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -427,7 +422,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1245086891}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -468,7 +463,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 511414682716486706, guid: e6b792a395fe2704cb24460894165510, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1564193775}
     - target: {fileID: 980914860013080467, guid: e6b792a395fe2704cb24460894165510, type: 3}
@@ -589,7 +584,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 366330585}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -670,7 +665,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 948245019}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -711,7 +706,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 256014697}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -839,7 +834,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 214537098}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -968,7 +963,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 379756088}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -1049,7 +1044,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1753438898}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -1130,11 +1125,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1534303898}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 1495460080}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -1215,7 +1210,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1118533735}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -1296,7 +1291,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 521725789}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -1377,7 +1372,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 844053079}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -1418,7 +1413,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1441207179}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -1503,7 +1498,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7777917577284147225, guid: ce424fcf3883f744597becc3b987c585, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 308704506}
     - target: {fileID: 8243043607946821848, guid: ce424fcf3883f744597becc3b987c585, type: 3}
@@ -1580,7 +1575,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1837285376}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -1701,7 +1696,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 898102005}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -1782,11 +1777,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1881210742}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 1170136677}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -1831,7 +1826,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5290137705387515578, guid: 8bf8dbbc33fc83240a33be1ee4883b14, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 930818033}
     - target: {fileID: 7101198858816936862, guid: 8bf8dbbc33fc83240a33be1ee4883b14, type: 3}
@@ -1908,7 +1903,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1865746443}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -2029,7 +2024,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1055421088}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -2114,7 +2109,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1591589020}
     m_RemovedComponents: []
@@ -2195,7 +2190,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 429748849}
     m_RemovedComponents: []
@@ -2236,7 +2231,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2776904797136541423, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 2043912682}
     - target: {fileID: 3479548521814186517, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
@@ -2380,7 +2375,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1888643924}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -2501,7 +2496,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1007149519}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -2529,6 +2524,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ed7fe75d773394ba4ef0b6f4abcb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &531861657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442819430}
+    m_Modifications:
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1777318657
+      objectReference: {fileID: 0}
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3778270125
+      objectReference: {fileID: 0}
+    - target: {fileID: 279185501140605820, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_Name
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+--- !u!4 &531861658 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+  m_PrefabInstance: {fileID: 531861657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &544088434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2586,7 +2651,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8925554912125856376, guid: 50ba9b1cd04ee2941813b17d1cbafcbd, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1589537514}
     m_RemovedComponents: []
@@ -2627,7 +2692,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1595700119999841138, guid: 34122f165b86f8f4ebac84038569a771, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 833857955}
     - target: {fileID: 4577003728619236507, guid: 34122f165b86f8f4ebac84038569a771, type: 3}
@@ -2748,7 +2813,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8925554912125856376, guid: 50ba9b1cd04ee2941813b17d1cbafcbd, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1012137292}
     m_RemovedComponents: []
@@ -2800,8 +2865,8 @@ Transform:
   m_GameObject: {fileID: 612613999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.56, z: 0}
-  m_LocalScale: {x: 40.3, y: 1, z: 32}
+  m_LocalPosition: {x: 1.28, y: -0.56, z: -3.88}
+  m_LocalScale: {x: 44.9, y: 1, z: 40}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1557613002}
@@ -2844,6 +2909,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2930,7 +2998,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1527318518}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -2971,7 +3039,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7166054695299506803, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 2094282450}
     - target: {fileID: 3632888587175209938, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
@@ -3092,7 +3160,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 942254032}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -3145,9 +3213,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -3197,8 +3264,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &705507995
 Transform:
   m_ObjectHideFlags: 0
@@ -3227,7 +3298,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1360505508}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -3352,7 +3423,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1487389725}
     m_RemovedComponents: []
@@ -3433,7 +3504,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1371287105}
     m_RemovedComponents: []
@@ -3510,7 +3581,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1166719410}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -3551,7 +3622,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1058501216}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -3672,7 +3743,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 544088435}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -3713,7 +3784,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 268879681}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -3838,7 +3909,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 350138914}
     m_RemovedComponents: []
@@ -3879,11 +3950,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5290137705387515578, guid: 8bf8dbbc33fc83240a33be1ee4883b14, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1273533278}
     - target: {fileID: 5290137705387515578, guid: 8bf8dbbc33fc83240a33be1ee4883b14, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 822877547}
     - target: {fileID: 7101198858816936862, guid: 8bf8dbbc33fc83240a33be1ee4883b14, type: 3}
@@ -3960,7 +4031,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1077098619}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -4081,7 +4152,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 306315673}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -4109,6 +4180,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ed7fe75d773394ba4ef0b6f4abcb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &889830650
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442819430}
+    m_Modifications:
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 1046852090
+      objectReference: {fileID: 0}
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3778270125
+      objectReference: {fileID: 0}
+    - target: {fileID: 279185501140605820, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_Name
+      value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+--- !u!4 &889830651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+  m_PrefabInstance: {fileID: 889830650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &898102004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4162,7 +4303,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 80542750}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -4243,11 +4384,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 530440876}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 1717217511}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -4288,7 +4429,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7166054695299506803, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1409766743}
     - target: {fileID: 3632888587175209938, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
@@ -4409,7 +4550,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1629013891}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -4582,7 +4723,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1113653795}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -4627,7 +4768,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7777917577284147225, guid: ce424fcf3883f744597becc3b987c585, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1319330933}
     - target: {fileID: 8243043607946821848, guid: ce424fcf3883f744597becc3b987c585, type: 3}
@@ -4748,7 +4889,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1938669109}
     m_RemovedComponents: []
@@ -4785,7 +4926,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 2007538847}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -4906,11 +5047,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 10759266}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 235687520}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -4991,7 +5132,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1245086891}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -5076,7 +5217,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8999006651138904992, guid: 8dbf84514bb90b2408bb744952fdaf05, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1113653795}
     m_RemovedComponents: []
@@ -5113,7 +5254,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1939423631}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -5194,7 +5335,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1240639848}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -5319,7 +5460,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 819473700}
     m_RemovedComponents: []
@@ -5356,7 +5497,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 833857955}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -5424,6 +5565,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8275312464207534657, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
   m_PrefabInstance: {fileID: 1118533734}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1121800416
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442819430}
+    m_Modifications:
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3951558071
+      objectReference: {fileID: 0}
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3778270125
+      objectReference: {fileID: 0}
+    - target: {fileID: 279185501140605820, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_Name
+      value: Player3
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+--- !u!4 &1121800417 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+  m_PrefabInstance: {fileID: 1121800416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1128474635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5437,7 +5648,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 635137716}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -5558,7 +5769,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1726934220}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -5639,7 +5850,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1783011340}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -5680,7 +5891,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1062493687}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -5805,7 +6016,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1683503524}
     m_RemovedComponents: []
@@ -5882,7 +6093,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1243278138}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -5923,7 +6134,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 424670405}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -6004,7 +6215,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 22688413}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -6125,7 +6336,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 620091528}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -6210,7 +6421,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 2062519496}
     m_RemovedComponents: []
@@ -6287,7 +6498,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1062864893}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -6368,7 +6579,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 573681879}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -6409,7 +6620,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485739450627959937, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 404001289}
     - target: {fileID: 6848803069409696389, guid: a5207bc02b102fd4c805dc1ad59442b5, type: 3}
@@ -6530,7 +6741,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 158181101}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -6611,7 +6822,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1862892020}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -6692,7 +6903,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 817489749}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -6773,7 +6984,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1741166867}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -6801,6 +7012,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 559732698878380339, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
   m_PrefabInstance: {fileID: 1441207178}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1442819429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442819430}
+  m_Layer: 0
+  m_Name: PlayerObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442819430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442819429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.94, y: 1.13, z: -15.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 889830651}
+  - {fileID: 531861658}
+  - {fileID: 1121800417}
+  - {fileID: 1603301344}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487389723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6854,7 +7100,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 650774462}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -6935,7 +7181,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 431449491}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -6976,7 +7222,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1619505941}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -7061,7 +7307,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2776904797136541423, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 32368318}
     - target: {fileID: 3479548521814186517, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
@@ -7178,7 +7424,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 197355462}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -7291,7 +7537,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1530172924}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -7336,7 +7582,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7777917577284147225, guid: ce424fcf3883f744597becc3b987c585, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 121207116}
     - target: {fileID: 8243043607946821848, guid: ce424fcf3883f744597becc3b987c585, type: 3}
@@ -7457,7 +7703,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 284577337}
     m_RemovedComponents: []
@@ -7481,6 +7727,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc75517ffc22fb4cb9239456b890965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1603301343
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442819430}
+    m_Modifications:
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 849943560
+      objectReference: {fileID: 0}
+    - target: {fileID: 120818979309799426, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 3778270125
+      objectReference: {fileID: 0}
+    - target: {fileID: 279185501140605820, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_Name
+      value: Player4
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+--- !u!4 &1603301344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 986067584542810023, guid: a1b532fec5b16b04fa3f2b97efa24068, type: 3}
+  m_PrefabInstance: {fileID: 1603301343}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1619505940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7534,11 +7850,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 283506073}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 1081253590}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -7579,7 +7895,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 438081244}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -7704,7 +8020,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 839569802}
     m_RemovedComponents: []
@@ -7785,7 +8101,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 805658262}
     m_RemovedComponents: []
@@ -7862,7 +8178,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1708143645}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -7903,7 +8219,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7166054695299506803, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 34399131}
     - target: {fileID: 3632888587175209938, guid: 17b64bf5c7eed5243b53898a3abec80e, type: 3}
@@ -8024,11 +8340,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 754045767}
     - target: {fileID: 7696019697970919693, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
-      propertyPath: nextTraversables.Array.data[1]
+      propertyPath: 'nextTraversables.Array.data[1]'
       value: 
       objectReference: {fileID: 1157726481}
     - target: {fileID: 7832959565716107854, guid: a130b0da2ef06064ba08562f2dcdb433, type: 3}
@@ -8113,7 +8429,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1012137292}
     m_RemovedComponents: []
@@ -8261,7 +8577,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8999006651138904992, guid: 8dbf84514bb90b2408bb744952fdaf05, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 32368318}
     m_RemovedComponents: []
@@ -8302,7 +8618,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2776904797136541423, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 731926419}
     - target: {fileID: 3479548521814186517, guid: bc6b9f818af004642bc2c1c68218fa21, type: 3}
@@ -8490,7 +8806,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8925554912125856376, guid: 50ba9b1cd04ee2941813b17d1cbafcbd, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 53770539}
     m_RemovedComponents: []
@@ -8589,7 +8905,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6242827081366200539, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 849336277}
     - target: {fileID: 6388311435884265273, guid: e7a0fca4031a66e4cbda149f6a34e1e0, type: 3}
@@ -8714,7 +9030,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4976247093796634340, guid: 528924290bf8dcb4aa813444e7d4dc41, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1589537514}
     m_RemovedComponents: []
@@ -8791,7 +9107,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1138640021}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -8872,7 +9188,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 984092217}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -8953,7 +9269,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1235362076}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -8994,7 +9310,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1371287105}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -9216,7 +9532,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4461537534062659641, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 290002357}
     - target: {fileID: 6744785224522272309, guid: 907917a73d375d447a2c93104f95a7b1, type: 3}
@@ -9337,7 +9653,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1118533735}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -9418,7 +9734,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5635709601067041823, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 1128474636}
     - target: {fileID: 7556891852198178079, guid: 08fb9b18e2a383348b581e29ede94c62, type: 3}
@@ -9499,7 +9815,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6585120695120654295, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
-      propertyPath: nextTraversables.Array.data[0]
+      propertyPath: 'nextTraversables.Array.data[0]'
       value: 
       objectReference: {fileID: 820765352}
     - target: {fileID: 7664356687578577817, guid: 6caa9f9a8a9764640b9f5393aca7c7be, type: 3}
@@ -9527,68 +9843,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ed7fe75d773394ba4ef0b6f4abcb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4164784485909763032
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1659999618752506545, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6066365619380762372, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
-      propertyPath: m_Name
-      value: NetworkManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 000dc6a66922fba41af82a9ed70c09a9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 4164784485909763032}
   - {fileID: 183496408}
+  - {fileID: 1442819430}

@@ -33,6 +33,7 @@ public class PlayerManager : NetworkBehaviour
     NetworkVariable<FixedString32Bytes> playerName = new();
     NetworkVariable<byte> colorIndex = new();
 
+    public PlayerController CurrentPlayerController { get; set; }
     public bool IsActive => active.Value;
 
     public void Deactivate() => active.Value = false;
