@@ -18,9 +18,16 @@ public class Board : MonoBehaviour
     void OnDestroy() {
         Instance = null;
     }
-    void Start()
-    {
-        
+    void Start() {
+        if (GameManager.Instance == null)
+            return;
+
+        for (int i = 0; i < 4; i++)
+        {
+            GameManager.Instance.players[i].CurrentPlayerController.Rigidbody.MovePosition(
+                StartingSpace.transform.position + new Vector3((i-2)*2, 0, -2)
+            );
+        }
     }
 
     void Update()
